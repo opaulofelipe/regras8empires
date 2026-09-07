@@ -1,0 +1,311 @@
+/* Manual do Jogo — layout responsivo sem recorte de imagens */
+:root {
+  --bg: #0b0b0b;
+  --surface: #121212;
+  --surface-soft: #171717;
+  --text: #f4ecda;
+  --muted: #b9ad97;
+  --gold: #c89a45;
+  --gold-soft: #7b5d2f;
+  --line: rgba(200, 154, 69, .30);
+  --max: 1180px;
+  --radius: 18px;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 76px;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top, rgba(200,154,69,.08), transparent 34rem),
+    var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button, a { -webkit-tap-highlight-color: transparent; }
+
+.hero {
+  min-height: 43vh;
+  display: grid;
+  place-items: end center;
+  padding: clamp(72px, 11vw, 150px) 20px 54px;
+  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,.18), rgba(0,0,0,.83)),
+    radial-gradient(circle at 50% 0%, rgba(200,154,69,.15), transparent 55%);
+}
+
+.hero__inner {
+  width: min(100%, var(--max));
+}
+
+.eyebrow,
+.section-heading p {
+  margin: 0 0 8px;
+  color: var(--gold);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(44px, 8vw, 92px);
+  line-height: .92;
+  letter-spacing: -.045em;
+  font-weight: 500;
+}
+
+.hero__text {
+  max-width: 680px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: 1.55;
+}
+
+.section-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(11, 11, 11, .90);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+}
+
+.section-nav__inner {
+  width: min(100%, var(--max));
+  margin: 0 auto;
+  padding: 0 12px;
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.section-nav__inner::-webkit-scrollbar { display: none; }
+
+.section-nav a {
+  flex: 0 0 auto;
+  padding: 18px 14px;
+  color: var(--muted);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  border-bottom: 2px solid transparent;
+}
+
+.section-nav a:hover,
+.section-nav a.is-active {
+  color: var(--text);
+  border-bottom-color: var(--gold);
+}
+
+.manual {
+  width: min(100%, var(--max));
+  margin: 0 auto;
+  padding: 12px clamp(10px, 2.5vw, 28px) 80px;
+}
+
+.manual-section {
+  padding: clamp(56px, 8vw, 94px) 0 0;
+}
+
+.manual-section + .manual-section {
+  border-top: 1px solid var(--line);
+  margin-top: clamp(56px, 8vw, 90px);
+}
+
+.section-heading {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: end;
+  gap: 14px;
+  margin-bottom: clamp(18px, 3vw, 30px);
+}
+
+.section-heading > span {
+  color: var(--gold);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: clamp(28px, 4.5vw, 50px);
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -.025em;
+}
+
+.sheet,
+.card {
+  margin: 0;
+}
+
+.sheet {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sheet .image-button {
+  width: 100%;
+  max-width: 1040px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(7px, 1.8vw, 20px);
+  align-items: start;
+}
+
+.card {
+  min-width: 0;
+}
+
+.image-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius);
+  background: transparent;
+  cursor: zoom-in;
+  overflow: hidden;
+  box-shadow: 0 14px 44px rgba(0,0,0,.28);
+}
+
+.image-button img {
+  display: block;
+  width: 100%;
+  height: auto;           /* nunca corta a imagem */
+  object-fit: contain;    /* preserva a proporção integral */
+  border-radius: inherit;
+  transition: transform .22s ease, filter .22s ease;
+}
+
+.image-button:hover img {
+  transform: translateY(-2px);
+  filter: brightness(1.035);
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 34px 20px 46px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--gold);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.lightbox {
+  width: 100vw;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 52px 12px 16px;
+  border: 0;
+  background: rgba(0,0,0,.94);
+  overflow: auto;
+}
+
+.lightbox::backdrop {
+  background: rgba(0,0,0,.90);
+}
+
+.lightbox[open] {
+  display: grid;
+  place-items: start center;
+}
+
+.lightbox__image {
+  display: block;
+  width: auto;
+  max-width: min(96vw, 1200px);
+  max-height: none;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 80px rgba(0,0,0,.55);
+}
+
+.lightbox__close {
+  position: fixed;
+  top: max(10px, env(safe-area-inset-top));
+  right: max(12px, env(safe-area-inset-right));
+  z-index: 3;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255,255,255,.28);
+  border-radius: 50%;
+  background: rgba(0,0,0,.68);
+  color: white;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 560px) {
+  :root { --radius: 10px; }
+
+  .hero {
+    min-height: 34vh;
+    padding: 70px 16px 38px;
+  }
+
+  .manual {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .section-heading {
+    padding-inline: 4px;
+    gap: 9px;
+  }
+
+  /* Exigência do manual: cartas continuam em 2 colunas mesmo no celular. */
+  .cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .manual-section + .manual-section {
+    margin-top: 52px;
+  }
+
+  .section-nav a {
+    padding: 15px 11px;
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .image-button img { transition: none; }
+}
