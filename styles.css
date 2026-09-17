@@ -519,3 +519,140 @@ button:focus-visible,a:focus-visible{outline:3px solid #f2c97d;outline-offset:4p
     line-height:1.28;
   }
 }
+
+/* Ajustes finais: Estrada + grade responsiva */
+.road-visual{
+  position:relative;
+  min-height:210px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--line);
+  border-radius:16px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 50%,rgba(215,170,90,.10),transparent 46%),
+    linear-gradient(145deg,#14100c,#090806);
+}
+
+.road-visual--illustrated{
+  padding:0;
+  min-height:210px;
+  background:#0d0c0a;
+}
+
+.road-visual--illustrated img{
+  width:100%;
+  height:100%;
+  min-height:210px;
+  object-fit:cover;
+  display:block;
+}
+
+.road-copy h3{
+  margin:0;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:2rem;
+  font-weight:500;
+}
+
+/* Desktop amplo */
+.cards-grid{
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:18px;
+}
+
+/* Tablet / notebook */
+@media(max-width:1160px){
+  .cards-grid{
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:16px;
+  }
+}
+
+/* Tablet pequeno */
+@media(max-width:900px){
+  .cards-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:14px;
+  }
+}
+
+/* Mobile */
+@media(max-width:560px){
+  .cards-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
+  }
+
+  .game-card__body{
+    padding:14px;
+  }
+
+  .game-card__body h3{
+    font-size:1rem;
+    line-height:1.12;
+  }
+
+  .resource-row{
+    gap:6px;
+  }
+
+  .resource-chip{
+    grid-template-columns:26px auto;
+    column-gap:6px;
+    padding:5px 6px 5px 5px;
+  }
+
+  .resource-chip img{
+    width:26px;
+    height:26px;
+  }
+
+  .resource-chip strong{
+    font-size:.85rem;
+  }
+
+  .resource-chip span:last-child{
+    display:none;
+  }
+
+  .effect{
+    font-size:.74rem;
+    line-height:1.38;
+  }
+
+  .road-card{
+    grid-template-columns:1fr;
+    gap:18px;
+    padding:18px;
+  }
+
+  .road-visual--illustrated,
+  .road-visual--illustrated img{
+    min-height:170px;
+  }
+
+  .road-copy h3{
+    font-size:1.7rem;
+  }
+}
+
+@media(max-width:380px){
+  .cards-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+  }
+
+  .game-card__body{
+    padding:12px;
+  }
+
+  .game-card__body h3{
+    font-size:.92rem;
+  }
+
+  .effect{
+    font-size:.7rem;
+  }
+}
