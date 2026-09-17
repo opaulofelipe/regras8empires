@@ -1,0 +1,963 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0907">
+  <meta name="description" content="Manual de regras do 8 Empires: posicionamento, construções, custos, efeitos, construções militares e monumentos.">
+  <title>8 Empires — Manual de Regras</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="hero" id="topo">
+    <div class="hero__decoration" aria-hidden="true">✦</div>
+    <div class="shell hero__content">
+      <p class="eyebrow">8 EMPIRES</p>
+      <h1>Manual de Regras</h1>
+      <p class="hero__lead">Uma referência visual para consultar posicionamento, construções, custos, efeitos, pilhagem e monumentos durante a partida.</p>
+      <p class="hero__hint"><span aria-hidden="true">↗</span> Toque em qualquer carta para ampliar.</p>
+    </div>
+  </header>
+
+  <nav class="section-nav" aria-label="Navegação do manual">
+    <div class="shell section-nav__inner">
+      <a href="#posicionamento">Posicionamento</a>
+      <a href="#construcoes">Construções</a>
+      <a href="#militares">Militares</a>
+      <a href="#monumentos">Monumentos</a>
+      <a href="#objetivos">Objetivos</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section shell section--compact" id="recursos" aria-labelledby="recursos-title">
+      <div class="section-kicker">Referência rápida</div>
+      <div class="section-heading">
+        <div>
+          <h2 id="recursos-title">Recursos</h2>
+          <p>Os custos aparecem abaixo de cada carta com estes quatro ícones.</p>
+        </div>
+      </div>
+      <div class="resource-legend">
+        <div class="legend-item"><img src="assets/recursos/madeira.png" alt="" width="50" height="50"><span>Madeira</span></div>
+        <div class="legend-item"><img src="assets/recursos/minerio.png" alt="" width="50" height="50"><span>Minério</span></div>
+        <div class="legend-item"><img src="assets/recursos/alimento.png" alt="" width="50" height="50"><span>Alimento</span></div>
+        <div class="legend-item"><img src="assets/recursos/pedra.png" alt="" width="50" height="50"><span>Pedra</span></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="posicionamento" aria-labelledby="posicionamento-title">
+      <div class="section-kicker">01 · Tabuleiro</div>
+      <div class="section-heading">
+        <div>
+          <h2 id="posicionamento-title">Regras de posicionamento</h2>
+          <p>As distâncias são contadas pelas Estradas que ligam os pontos de construção.</p>
+        </div>
+      </div>
+
+      <div class="rules-grid">
+        <article class="rule-card">
+          <span class="rule-number">01</span>
+          <h3>Vilarejos e Cidades</h3>
+          <p>Devem ter no mínimo <strong>2 Estradas de distância entre si</strong>.</p>
+        </article>
+        <article class="rule-card">
+          <span class="rule-number">02</span>
+          <h3>Outras construções</h3>
+          <p>Podem ficar a apenas <strong>1 Estrada de um Vilarejo ou Cidade</strong>, desde que estejam <strong>no mesmo quadrante</strong>.</p>
+        </article>
+        <article class="rule-card">
+          <span class="rule-number">03</span>
+          <h3>Proximidade de adversários</h3>
+          <p>Se houver um <strong>Vilarejo ou Cidade de outro jogador</strong> nas proximidades, qualquer nova construção deve respeitar distância mínima de <strong>2 Estradas</strong>, independentemente do tipo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell" id="construcoes" aria-labelledby="construcoes-title">
+      <div class="section-kicker">02 · Desenvolvimento</div>
+      <div class="section-heading">
+        <div>
+          <h2 id="construcoes-title">Construções</h2>
+          <p>Cada carta mostra sua construção; o custo e o efeito ficam logo abaixo para consulta rápida.</p>
+        </div>
+      </div>
+
+      <article class="road-card">
+        <div class="road-visual" aria-hidden="true">
+          <span></span><i></i><span></span>
+        </div>
+        <div class="road-copy">
+          <div>
+            <p class="mini-label">SEM CARTA</p>
+            <h3>Estrada</h3>
+          </div>
+          <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Pedra</span>
+            </span></div>
+    </div>
+          <p>Conecta suas construções e permite alcançar novas regiões.</p>
+        </div>
+      </article>
+
+      <div class="cards-grid">
+        
+    <article class="game-card ">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/vilarejo.webp"
+              data-title="Vilarejo"
+              aria-label="Ampliar carta Vilarejo">
+        <img src="assets/cartas/vilarejo.webp" alt="Carta Vilarejo" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Vilarejo</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Pedra</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Madeira</span>
+            </span></div>
+    </div>
+        
+        <p class="effect">Quando o número da região é sorteado, recebe <strong>1 recurso daquela região</strong>.</p>
+      </div>
+    </article>
+    
+    <article class="game-card ">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/cidade.webp"
+              data-title="Cidade"
+              aria-label="Ampliar carta Cidade">
+        <img src="assets/cartas/cidade.webp" alt="Carta Cidade" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Cidade</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>1</strong>
+                <span>Madeira</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>1</strong>
+                <span>Pedra</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/minerio.png" alt="" width="34" height="34">
+                <strong>1</strong>
+                <span>Minério</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>1</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+        
+        <p class="effect">Quando o número da região é sorteado, recebe <strong>2 recursos daquela região</strong>.</p>
+      </div>
+    </article>
+    
+    <article class="game-card ">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/zona-rural.webp"
+              data-title="Zona Rural"
+              aria-label="Ampliar carta Zona Rural">
+        <img src="assets/cartas/zona-rural.webp" alt="Carta Zona Rural" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Zona Rural</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Madeira</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+        
+        <p class="effect"><strong>Dobra a produção de Madeira e Alimento</strong> da região.</p>
+      </div>
+    </article>
+    
+    <article class="game-card ">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/metalurgica.webp"
+              data-title="Metalúrgica"
+              aria-label="Ampliar carta Metalúrgica">
+        <img src="assets/cartas/metalurgica.webp" alt="Carta Metalúrgica" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Metalúrgica</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Pedra</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/minerio.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Minério</span>
+            </span></div>
+    </div>
+        
+        <p class="effect"><strong>Dobra a produção de Pedra e Minério</strong> da região.</p>
+      </div>
+    </article>
+    
+    <article class="game-card ">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/universidade.webp"
+              data-title="Universidade"
+              aria-label="Ampliar carta Universidade">
+        <img src="assets/cartas/universidade.webp" alt="Carta Universidade" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Universidade</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>1</strong>
+                <span>Madeira</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>1</strong>
+                <span>Pedra</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/minerio.png" alt="" width="34" height="34">
+                <strong>1</strong>
+                <span>Minério</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>1</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+        
+        <p class="effect"><strong>Dobra qualquer recurso</strong> produzido naquela região.</p>
+      </div>
+    </article>
+    
+    <article class="game-card ">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/porto.webp"
+              data-title="Porto"
+              aria-label="Ampliar carta Porto">
+        <img src="assets/cartas/porto.webp" alt="Carta Porto" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Porto</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Pedra</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+        <p class="effect">Permite trocar com o banco <strong>3 recursos iguais por 1 recurso à escolha</strong>, no máximo <strong>2 vezes por turno</strong>.</p>
+      </div>
+    </article>
+    
+    <article class="game-card ">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/centro-comercial.webp"
+              data-title="Centro Comercial"
+              aria-label="Ampliar carta Centro Comercial">
+        <img src="assets/cartas/centro-comercial.webp" alt="Carta Centro Comercial" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Centro Comercial</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/minerio.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Minério</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Pedra</span>
+            </span></div>
+    </div>
+        
+        <p class="effect">Quando sua região é sorteada, pode trocar <strong>até 2 recursos seus</strong>, cada um por <strong>1 recurso à escolha do banco</strong>.</p>
+      </div>
+    </article>
+    
+    <article class="game-card ">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/embaixada.webp"
+              data-title="Embaixada"
+              aria-label="Ampliar carta Embaixada">
+        <img src="assets/cartas/embaixada.webp" alt="Carta Embaixada" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Embaixada</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Madeira</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Pedra</span>
+            </span></div>
+    </div>
+        
+        <p class="effect">Quando sua região é sorteada, escolha <strong>1 tipo de recurso que outro jogador tenha recebido naquela rodada</strong> e receba 1 unidade desse recurso do banco.</p>
+      </div>
+    </article>
+    
+    <article class="game-card ">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/oraculo.webp"
+              data-title="Oráculo"
+              aria-label="Ampliar carta Oráculo">
+        <img src="assets/cartas/oraculo.webp" alt="Carta Oráculo" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Oráculo</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Alimento</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>1</strong>
+                <span>Pedra</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/minerio.png" alt="" width="34" height="34">
+                <strong>1</strong>
+                <span>Minério</span>
+            </span></div>
+    </div>
+        
+        <p class="effect">Quando sua região é sorteada, você pode considerar o resultado dos dados como <strong>+1 ou −1 apenas para você</strong> e colher a produção correspondente ao novo número. Os demais continuam usando o resultado original.</p>
+      </div>
+    </article>
+    
+    <article class="game-card ">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/entreposto-comercial.webp"
+              data-title="Entreposto Comercial"
+              aria-label="Ampliar carta Entreposto Comercial">
+        <img src="assets/cartas/entreposto-comercial.webp" alt="Carta Entreposto Comercial" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Entreposto Comercial</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Alimento</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/minerio.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Minério</span>
+            </span></div>
+    </div>
+        
+        <p class="effect">Quando sua região é sorteada, receba <strong>1 recurso de uma região adjacente</strong> onde você tenha Vilarejo ou Cidade.</p>
+      </div>
+    </article>
+    
+    <article class="game-card ">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/guilda-dos-construtores.webp"
+              data-title="Guilda dos Construtores"
+              aria-label="Ampliar carta Guilda dos Construtores">
+        <img src="assets/cartas/guilda-dos-construtores.webp" alt="Carta Guilda dos Construtores" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Guilda dos Construtores</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/minerio.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Minério</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>1</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+        
+        <p class="effect">Quando sua região é sorteada, pode construir <strong>1 Estrada gratuitamente</strong>.</p>
+      </div>
+    </article>
+    
+      </div>
+    </section>
+
+    <section class="section shell" id="militares" aria-labelledby="militares-title">
+      <div class="section-kicker">03 · Conquista</div>
+      <div class="section-heading">
+        <div>
+          <h2 id="militares-title">Construções militares</h2>
+          <p>Todas usam a mesma regra de ativação; o custo de pilhagem muda conforme a construção.</p>
+        </div>
+      </div>
+
+      <aside class="military-rule" aria-label="Regra de pilhagem">
+        <div class="military-rule__icon" aria-hidden="true">⚔</div>
+        <div>
+          <strong>Regra de pilhagem</strong>
+          <p>Quando o número da região onde a construção militar está localizada é sorteado, o jogador pode pagar o custo de pilhagem indicado e pegar <strong>1 recurso à sua escolha do jogador que lançou os dados</strong>. Cada construção pode pilhar <strong>uma vez por ativação</strong>.</p>
+        </div>
+      </aside>
+
+      <div class="cards-grid">
+        
+    <article class="game-card game-card--military">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/estabulo.webp"
+              data-title="Estábulo"
+              aria-label="Ampliar carta Estábulo">
+        <img src="assets/cartas/estabulo.webp" alt="Carta Estábulo" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Estábulo</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Alimento</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Madeira</span>
+            </span></div>
+    </div>
+        <div class="cost-block">
+        <span class="cost-label">Custo para pilhar</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>1</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+        <p class="effect">Pilhe <strong>1 recurso à escolha</strong> do jogador que lançou os dados.</p>
+      </div>
+    </article>
+    
+    <article class="game-card game-card--military">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/campo-de-arqueiros.webp"
+              data-title="Campo de Arqueiros"
+              aria-label="Ampliar carta Campo de Arqueiros">
+        <img src="assets/cartas/campo-de-arqueiros.webp" alt="Carta Campo de Arqueiros" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Campo de Arqueiros</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Alimento</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Madeira</span>
+            </span></div>
+    </div>
+        <div class="cost-block">
+        <span class="cost-label">Custo para pilhar</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>1</strong>
+                <span>Madeira</span>
+            </span></div>
+    </div>
+        <p class="effect">Pilhe <strong>1 recurso à escolha</strong> do jogador que lançou os dados.</p>
+      </div>
+    </article>
+    
+    <article class="game-card game-card--military">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/quartel.webp"
+              data-title="Quartel"
+              aria-label="Ampliar carta Quartel">
+        <img src="assets/cartas/quartel.webp" alt="Carta Quartel" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Quartel</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Pedra</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>2</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+        <div class="cost-block">
+        <span class="cost-label">Custo para pilhar</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>1</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+        <p class="effect">Pilhe <strong>1 recurso à escolha</strong> do jogador que lançou os dados.</p>
+      </div>
+    </article>
+    
+    <article class="game-card game-card--military">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/navios-de-guerra.webp"
+              data-title="Navios de Guerra"
+              aria-label="Ampliar carta Navios de Guerra">
+        <img src="assets/cartas/navios-de-guerra.webp" alt="Carta Navios de Guerra" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Navios de Guerra</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Madeira</span>
+            </span></div>
+    </div>
+        <div class="cost-block">
+        <span class="cost-label">Custo para pilhar</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>1</strong>
+                <span>Madeira</span>
+            </span></div>
+    </div>
+        <p class="effect">Pilhe <strong>1 recurso à escolha</strong> do jogador que lançou os dados.</p>
+      </div>
+    </article>
+    
+    <article class="game-card game-card--military">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/armas-de-cerco.webp"
+              data-title="Armas de Cerco"
+              aria-label="Ampliar carta Armas de Cerco">
+        <img src="assets/cartas/armas-de-cerco.webp" alt="Carta Armas de Cerco" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Armas de Cerco</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Madeira</span>
+            </span></div>
+    </div>
+        <div class="cost-block">
+        <span class="cost-label">Custo para pilhar</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>1</strong>
+                <span>Pedra</span>
+            </span></div>
+    </div>
+        <p class="effect">Pilhe <strong>1 recurso à escolha</strong> do jogador que lançou os dados.</p>
+      </div>
+    </article>
+    
+      </div>
+    </section>
+
+    <section class="section shell" id="monumentos" aria-labelledby="monumentos-title">
+      <div class="section-kicker">04 · Prestígio</div>
+      <div class="section-heading">
+        <div>
+          <h2 id="monumentos-title">Monumentos</h2>
+          <p>Todos possuem o mesmo custo e são usados principalmente para cumprir a Conquista Monumental.</p>
+        </div>
+      </div>
+
+      <div class="shared-cost">
+        <span>Custo de qualquer Monumento</span>
+        <div class="cost-block">
+        <span class="cost-label"></span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Madeira</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Pedra</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/minerio.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Minério</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+      </div>
+
+      <div class="cards-grid">
+        
+    <article class="game-card game-card--monument">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/grande-piramide-de-gize.webp"
+              data-title="Grande Pirâmide de Gizé"
+              aria-label="Ampliar carta Grande Pirâmide de Gizé">
+        <img src="assets/cartas/grande-piramide-de-gize.webp" alt="Carta Grande Pirâmide de Gizé" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Grande Pirâmide de Gizé</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Madeira</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Pedra</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/minerio.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Minério</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+        
+        <p class="effect">Não possui bônus econômico próprio definido. É usado principalmente para cumprir a <strong>Conquista Monumental</strong>.</p>
+      </div>
+    </article>
+    
+    <article class="game-card game-card--monument">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/jardins-suspensos-da-babilonia.webp"
+              data-title="Jardins Suspensos da Babilônia"
+              aria-label="Ampliar carta Jardins Suspensos da Babilônia">
+        <img src="assets/cartas/jardins-suspensos-da-babilonia.webp" alt="Carta Jardins Suspensos da Babilônia" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Jardins Suspensos da Babilônia</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Madeira</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Pedra</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/minerio.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Minério</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+        
+        <p class="effect">Não possui bônus econômico próprio definido. É usado principalmente para cumprir a <strong>Conquista Monumental</strong>.</p>
+      </div>
+    </article>
+    
+    <article class="game-card game-card--monument">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/templo-de-artemis.webp"
+              data-title="Templo de Ártemis"
+              aria-label="Ampliar carta Templo de Ártemis">
+        <img src="assets/cartas/templo-de-artemis.webp" alt="Carta Templo de Ártemis" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Templo de Ártemis</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Madeira</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Pedra</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/minerio.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Minério</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+        
+        <p class="effect">Não possui bônus econômico próprio definido. É usado principalmente para cumprir a <strong>Conquista Monumental</strong>.</p>
+      </div>
+    </article>
+    
+    <article class="game-card game-card--monument">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/estatua-de-zeus.webp"
+              data-title="Estátua de Zeus"
+              aria-label="Ampliar carta Estátua de Zeus">
+        <img src="assets/cartas/estatua-de-zeus.webp" alt="Carta Estátua de Zeus" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Estátua de Zeus</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Madeira</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Pedra</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/minerio.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Minério</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+        
+        <p class="effect">Não possui bônus econômico próprio definido. É usado principalmente para cumprir a <strong>Conquista Monumental</strong>.</p>
+      </div>
+    </article>
+    
+    <article class="game-card game-card--monument">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/mausoleu-de-halicarnasso.webp"
+              data-title="Mausoléu de Halicarnasso"
+              aria-label="Ampliar carta Mausoléu de Halicarnasso">
+        <img src="assets/cartas/mausoleu-de-halicarnasso.webp" alt="Carta Mausoléu de Halicarnasso" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Mausoléu de Halicarnasso</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Madeira</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Pedra</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/minerio.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Minério</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+        
+        <p class="effect">Não possui bônus econômico próprio definido. É usado principalmente para cumprir a <strong>Conquista Monumental</strong>.</p>
+      </div>
+    </article>
+    
+    <article class="game-card game-card--monument">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/colosso-de-rodes.webp"
+              data-title="Colosso de Rodes"
+              aria-label="Ampliar carta Colosso de Rodes">
+        <img src="assets/cartas/colosso-de-rodes.webp" alt="Carta Colosso de Rodes" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Colosso de Rodes</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Madeira</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Pedra</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/minerio.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Minério</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+        
+        <p class="effect">Não possui bônus econômico próprio definido. É usado principalmente para cumprir a <strong>Conquista Monumental</strong>.</p>
+      </div>
+    </article>
+    
+    <article class="game-card game-card--monument">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/farol-de-alexandria.webp"
+              data-title="Farol de Alexandria"
+              aria-label="Ampliar carta Farol de Alexandria">
+        <img src="assets/cartas/farol-de-alexandria.webp" alt="Carta Farol de Alexandria" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Farol de Alexandria</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Madeira</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Pedra</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/minerio.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Minério</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+        
+        <p class="effect">Não possui bônus econômico próprio definido. É usado principalmente para cumprir a <strong>Conquista Monumental</strong>.</p>
+      </div>
+    </article>
+    
+    <article class="game-card game-card--monument">
+      <button class="card-image js-lightbox" type="button"
+              data-full="assets/cartas/grande-mesquita-de-djenne.webp"
+              data-title="Grande Mesquita de Djenné"
+              aria-label="Ampliar carta Grande Mesquita de Djenné">
+        <img src="assets/cartas/grande-mesquita-de-djenne.webp" alt="Carta Grande Mesquita de Djenné" loading="lazy" decoding="async">
+        <span class="zoom-hint" aria-hidden="true">Ampliar</span>
+      </button>
+      <div class="game-card__body">
+        <h3>Grande Mesquita de Djenné</h3>
+        <div class="cost-block">
+        <span class="cost-label">Custo</span>
+        <div class="resource-row"><span class="resource-chip">
+                <img src="assets/recursos/madeira.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Madeira</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/pedra.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Pedra</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/minerio.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Minério</span>
+            </span><span class="resource-chip">
+                <img src="assets/recursos/alimento.png" alt="" width="34" height="34">
+                <strong>3</strong>
+                <span>Alimento</span>
+            </span></div>
+    </div>
+        
+        <p class="effect">Não possui bônus econômico próprio definido. É usado principalmente para cumprir a <strong>Conquista Monumental</strong>.</p>
+      </div>
+    </article>
+    
+      </div>
+    </section>
+
+    <section class="final-cta" id="objetivos" aria-labelledby="objetivos-title">
+      <div class="shell final-cta__inner">
+        <p class="eyebrow">CONDIÇÕES DE VITÓRIA</p>
+        <h2 id="objetivos-title">Sortear objetivos</h2>
+        <p>Abra o sorteador para definir os objetivos da partida.</p>
+        <a class="primary-button" href="https://opaulofelipe.github.io/objetivos8empires/">
+          Sortear objetivos <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <span>8 Empires · Manual de Regras</span>
+      <a href="#topo">Voltar ao início ↑</a>
+    </div>
+  </footer>
+
+  <button class="back-top" type="button" aria-label="Voltar ao início">↑</button>
+
+  <dialog class="lightbox" aria-label="Visualização ampliada da carta">
+    <button class="lightbox__close" type="button" aria-label="Fechar">×</button>
+    <div class="lightbox__stage">
+      <img class="lightbox__image" src="" alt="">
+      <p class="lightbox__caption"></p>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
