@@ -17,3 +17,9 @@ O botão **Sortear objetivos** aponta para:
 
 ## Observação
 A regra de **Estrada** é exibida sem carta, conforme definido. A carta de **Porto** foi adicionada ao manual.
+
+
+## Imagem-resumo
+A página está preparada para carregar uma imagem na raiz do repositório com o nome `resumo-construcoes.png`.
+
+Essa imagem deve resumir as construções, seus custos e bônus. O botão **Sortear objetivos** fica no topo do manual.
