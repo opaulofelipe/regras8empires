@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b0907">
   <meta name="description" content="Manual de regras do 8 Empires: posicionamento, construções, custos, efeitos, construções militares e monumentos.">
   <title>8 Empires — Manual de Regras</title>
-  <link rel="stylesheet" href="styles.css?v=20260917-1945">
+  <link rel="stylesheet" href="styles.css?v=20260920-1835">
   <style>
     /* Ajustes finais do manual */
     .road-visual--illustrated{
@@ -100,14 +100,110 @@
       <p class="eyebrow">8 EMPIRES</p>
       <h1>Manual de Regras</h1>
       <p class="hero__lead">Uma referência visual para consultar posicionamento, construções, custos, efeitos, pilhagem e monumentos durante a partida.</p>
-      <div class="hero__actions">
-        <a class="primary-button primary-button--hero" href="https://opaulofelipe.github.io/objetivos8empires/">
-          Sortear objetivos <span aria-hidden="true">→</span>
-        </a>
-        <p class="hero__hint"><span aria-hidden="true">↗</span> Toque em qualquer carta para ampliar.</p>
-      </div>
+      <p class="hero__hint"><span aria-hidden="true">↗</span> Toque em qualquer carta para ampliar.</p>
     </div>
   </header>
+
+  <section class="game-tools shell" id="partida" aria-labelledby="partida-title">
+    <div class="game-tool-panel objective-panel">
+      <div class="tool-heading">
+        <div>
+          <p class="section-kicker">Partida</p>
+          <h2 id="partida-title">Objetivo</h2>
+          <p>Sorteie uma condição de vitória. A carta permanecerá salva nesta página até você reiniciar o objetivo.</p>
+        </div>
+      </div>
+
+      <div class="objective-draw-area" aria-label="Sorteador de objetivo">
+        <div id="objectiveStage" class="objective-stage">
+          <div id="objectiveDeck" class="objective-deck" aria-hidden="true">
+            <div class="objective-deck-layer objective-deck-layer-3"></div>
+            <div class="objective-deck-layer objective-deck-layer-2"></div>
+            <div class="objective-deck-layer objective-deck-layer-1">
+              <span class="objective-deck-mark">✦</span>
+              <span class="objective-deck-label">OBJETIVO</span>
+            </div>
+          </div>
+
+          <article id="objectiveResultCard" class="objective-result-card" aria-live="polite" hidden>
+            <div class="objective-card-inner">
+              <div class="objective-card-face objective-card-back" aria-hidden="true">
+                <span class="objective-deck-mark">✦</span>
+                <span class="objective-deck-label">OBJETIVO</span>
+              </div>
+              <div class="objective-card-face objective-card-front">
+                <img id="objectiveCardImage" src="" alt="" draggable="false">
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="objective-controls">
+          <button id="objectiveDrawButton" class="objective-button objective-button--primary" type="button">
+            <span aria-hidden="true">✦</span>
+            <span id="objectiveButtonText">Sortear objetivo</span>
+          </button>
+          <button id="objectiveResetButton" class="objective-button objective-button--secondary" type="button" hidden>
+            Reiniciar objetivo
+          </button>
+        </div>
+
+        <p id="objectiveStatus" class="objective-status" aria-live="polite">10 cartas disponíveis</p>
+      </div>
+    </div>
+
+    <div class="game-tool-panel resource-calculator" aria-labelledby="calculator-title">
+      <div class="tool-heading">
+        <div>
+          <p class="section-kicker">Controle da partida</p>
+          <h2 id="calculator-title">Calculadora de recursos</h2>
+          <p>Use os botões para adicionar ou remover uma unidade de cada recurso.</p>
+        </div>
+      </div>
+
+      <div class="resource-counter-grid" id="resourceCalculator">
+        <article class="resource-counter" data-resource="madeira">
+          <img src="recursos/madeira.png" alt="" width="64" height="64">
+          <h3>Madeira</h3>
+          <div class="counter-controls" aria-label="Quantidade de Madeira">
+            <button class="counter-button" type="button" data-action="decrement" aria-label="Remover 1 Madeira">−</button>
+            <output class="resource-count" data-count-for="madeira">0</output>
+            <button class="counter-button" type="button" data-action="increment" aria-label="Adicionar 1 Madeira">+</button>
+          </div>
+        </article>
+
+        <article class="resource-counter" data-resource="minerio">
+          <img src="recursos/minerio.png" alt="" width="64" height="64">
+          <h3>Minério</h3>
+          <div class="counter-controls" aria-label="Quantidade de Minério">
+            <button class="counter-button" type="button" data-action="decrement" aria-label="Remover 1 Minério">−</button>
+            <output class="resource-count" data-count-for="minerio">0</output>
+            <button class="counter-button" type="button" data-action="increment" aria-label="Adicionar 1 Minério">+</button>
+          </div>
+        </article>
+
+        <article class="resource-counter" data-resource="alimento">
+          <img src="recursos/alimento.png" alt="" width="64" height="64">
+          <h3>Alimento</h3>
+          <div class="counter-controls" aria-label="Quantidade de Alimento">
+            <button class="counter-button" type="button" data-action="decrement" aria-label="Remover 1 Alimento">−</button>
+            <output class="resource-count" data-count-for="alimento">0</output>
+            <button class="counter-button" type="button" data-action="increment" aria-label="Adicionar 1 Alimento">+</button>
+          </div>
+        </article>
+
+        <article class="resource-counter" data-resource="pedra">
+          <img src="recursos/pedra.png" alt="" width="64" height="64">
+          <h3>Pedra</h3>
+          <div class="counter-controls" aria-label="Quantidade de Pedra">
+            <button class="counter-button" type="button" data-action="decrement" aria-label="Remover 1 Pedra">−</button>
+            <output class="resource-count" data-count-for="pedra">0</output>
+            <button class="counter-button" type="button" data-action="increment" aria-label="Adicionar 1 Pedra">+</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <nav class="section-nav" aria-label="Navegação do manual">
     <div class="shell section-nav__inner">
@@ -1034,6 +1130,6 @@
     </div>
   </dialog>
 
-  <script src="script.js?v=20260917-1945"></script>
+  <script src="script.js?v=20260920-1835"></script>
 </body>
 </html>
