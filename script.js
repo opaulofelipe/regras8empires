@@ -77,7 +77,7 @@ lightbox.addEventListener('close', () => {
     { name: "Prosperidade", file: "https://opaulofelipe.github.io/objetivos8empires/assets/cards/prosperidade.jpeg" },
     { name: "Militarismo", file: "https://opaulofelipe.github.io/objetivos8empires/assets/cards/militarismo.jpeg" },
     { name: "Talassocracia", file: "https://opaulofelipe.github.io/objetivos8empires/assets/cards/talassocracia.jpeg" },
-    { name: "Diplomacia", file: "https://opaulofelipe.github.io/objetivos8empires/assets/cards/diplomacia.jpeg" },
+    { name: "Diplomacia", file: "https://opaulofelipe.github.io/objetivos8empires/assets/cards/ascensao.jpeg" },
     { name: "Imperialismo", file: "https://opaulofelipe.github.io/objetivos8empires/assets/cards/imperialismo.jpeg" },
     { name: "Engenharia", file: "https://opaulofelipe.github.io/objetivos8empires/assets/cards/engenharia.jpeg" },
     { name: "Expansionismo", file: "https://opaulofelipe.github.io/objetivos8empires/assets/cards/expansionismo.jpeg" },
